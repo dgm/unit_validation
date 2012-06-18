@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["mortonda@dgrmm.net"]
   s.homepage    = "http://www.github.com/dgm"
   s.summary     = "A model validation class to work in hand with ruby-units"
-  s.description = "A model validation class to work in hand with ruby-units"
+  s.description = "Validate that a column is a valid unit of measurement"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
