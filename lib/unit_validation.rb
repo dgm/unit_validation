@@ -1,4 +1,5 @@
 class UnitValidator < ActiveModel::EachValidator
+  require 'ruby-units'
   def validate_each(record, attribute, value)
     allowed=Array(options[:allowed_types]) if options[:allowed_types]
     begin
