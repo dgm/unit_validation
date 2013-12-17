@@ -6,11 +6,11 @@ class UnitValidator < ActiveModel::EachValidator
     v=Unit.new(value)
     if allowed
         unless allowed.include?(v.kind)
-            record.errors[attribute] << (options[:message] || "is not a valid unit of #{allowed.collect(&:to_s).join(',')}")
+            record.errors[attribute] << (options[:message] || I18n.t('units.errors.invalid_kind', kind: allowed.collect(&:to_s).join(',')))
         end
     end
     rescue 
-      record.errors[attribute] << (options[:message] || "is not a valid measurement")
+      record.errors[attribute] << (options[:message] || I18n.t('units.errors.invalid_unit'))
     end
   end
 end
