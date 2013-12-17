@@ -1,3 +1,5 @@
+require 'unit_validation/init'
+
 class UnitValidator < ActiveModel::EachValidator
   require 'ruby-units'
   def validate_each(record, attribute, value)
