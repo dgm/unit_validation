@@ -1,0 +1,19 @@
+nl:
+  units:
+    kind:
+      angle: hoek
+      counting: aantal
+      current: stroom
+      currency: bedrag
+      length: lengte
+      logarithmic: logaritme
+      luminosity: lichtsterkte
+      information: datacapaciteit
+      time: tijd
+      solid_angle: ruimtehoek
+      substance: stofhoeveelheid
+      temperature: temperatuur
+      mass: gewicht
+    errors:
+      invalid_kind: is geen geldige grootheid van %{kind}
+      invalid_unit: is geen geldige grootheid
